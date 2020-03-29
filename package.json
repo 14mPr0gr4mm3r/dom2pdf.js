@@ -1,0 +1,29 @@
+{
+  "name": "dom2pdf.js",
+  "version": "0.1.0",
+  "description": "A library for converting a whole element tree into PDF (a DOM-renderer-like library for PDF)",
+  "author": "Gustavo-Sampaio",
+  "license": "MIT",
+  "main": "./dist/dom2pdf.js",
+  "scripts": {
+    "build": "npx rollup --config build.js"
+  },
+  "keywords": [
+    "dom2pdf-js",
+    "library",
+    "pdf-from-dom",
+    "dom-renderer",
+    "jspdf-library"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/14mPr0gr4mm3r/dom2pdf.js.git"
+  },
+  "dependencies": {
+    "jspdf": "^1.5.3"
+  },
+  "devDependencies": {
+    "rollup": "^2.2.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  }
+}
