@@ -20,6 +20,7 @@
     "url": "https://github.com/14mPr0gr4mm3r/dom2pdf.js.git"
   },
   "dependencies": {
+    "acorn": ">=5.7.4",
     "jspdf": "^1.5.3"
   },
   "devDependencies": {
