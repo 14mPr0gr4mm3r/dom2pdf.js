@@ -1,0 +1,43 @@
+# This is a basic workflow to help you get started with Actions
+
+name: NPM Workflow
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  release:
+      types: [published, created, edited]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  do_helloworld:
+    name: Shows "Hello, World!"
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo Hello, World!
+
+  get_dependencies:
+    name: Install dependencies via npm
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm install
+  
+  build:
+    # The type of runner that the job will run on
+    name: Build the source
+    runs-on: ubuntu-latest
+    needs: get_dependencies
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: Run the npm script for building
+      run: npm run build
