@@ -11,8 +11,8 @@
   "keywords": [
     "dom2pdf-js",
     "library",
-    "pdf-from-dom",
-    "dom-renderer",
+    "pdf-generator",
+    "html2pdf",
     "jspdf-library"
   ],
   "repository": {
