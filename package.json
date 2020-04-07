@@ -11,9 +11,8 @@
   "keywords": [
     "dom2pdf-js",
     "library",
-    "pdf-generator",
+    "pdf-generation",
     "html2pdf",
-    "jspdf-library"
   ],
   "repository": {
     "type": "git",
