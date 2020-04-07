@@ -12,7 +12,7 @@
     "dom2pdf-js",
     "library",
     "pdf-generation",
-    "html2pdf",
+    "html2pdf"
   ],
   "repository": {
     "type": "git",
